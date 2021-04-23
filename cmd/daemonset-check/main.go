@@ -51,12 +51,12 @@ var (
 	checkDeadline time.Time
 
 	// Daemonset check configurations
-	hostName      string
-	tolerationsEnv = os.Getenv("TOLERATIONS")
-	tolerations   []apiv1.Toleration
-	daemonSetName string
+	hostName         string
+	tolerationsEnv   = os.Getenv("TOLERATIONS")
+	tolerations      []apiv1.Toleration
+	daemonSetName    string
 	allowedTaintsEnv = os.Getenv("ALLOWED_TAINTS")
-	allowedTaints map[string]apiv1.TaintEffect
+	allowedTaints    map[string]apiv1.TaintEffect
 
 	// Time object used for the check.
 	now time.Time
