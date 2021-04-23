@@ -775,7 +775,7 @@ func (ext *Checker) getCheckLastUpdateTime() (metav1.Time, error) {
 }
 
 // waitForPodStatusUpdate waits for a pod status to update from the specified time
-func (ext *Checker) waitForPodStatusUpdate(lastUpdateTime time.Time) chan error {
+func (ext *Checker) waitForPodStatusUpdate(lastUpdateTime metav1.Time) chan error {
 	ext.log("waiting for pod to report in to status page...")
 
 	// make the output channel we will return and close it whenever we are done
@@ -824,7 +824,7 @@ func (ext *Checker) waitForPodStatusUpdate(lastUpdateTime time.Time) chan error 
 }
 
 // podHasReportedInAfterTime indicates if a pod has reported a state since the supplied timestamp
-func (ext *Checker) podHasReportedInAfterTime(t time.Time) (bool, error) {
+func (ext *Checker) podHasReportedInAfterTime(t metav1.Time) (bool, error) {
 	// fetch the lastUpdateTime from the khstate as of right now
 	currentUpdateTime, err := ext.getCheckLastUpdateTime()
 	if err != nil {
@@ -833,7 +833,7 @@ func (ext *Checker) podHasReportedInAfterTime(t time.Time) (bool, error) {
 
 	// if the pod has updated, then we return and were done waiting
 	ext.log("Last report time was:", t, "vs", currentUpdateTime)
-	if currentUpdateTime.After(t) {
+	if currentUpdateTime.After(t.Time) {
 		return true, nil
 	}
 
