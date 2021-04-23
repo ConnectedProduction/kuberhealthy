@@ -73,7 +73,6 @@ spec:
             required:
             - AuthoritativePod
             - Errors
-            - LastRun
             - Namespace
             - OK
             - RunDuration

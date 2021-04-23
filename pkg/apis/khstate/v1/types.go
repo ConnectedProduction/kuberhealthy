@@ -33,6 +33,7 @@ type WorkloadDetails struct {
 	Errors           []string  `json:"Errors"`           // the list of errors reported from the khWorkload run
 	RunDuration      string    `json:"RunDuration"`      // the time it took for the khWorkload to complete
 	Namespace        string    `json:"Namespace"`        // the namespace the khWorkload was run in
+	// +optional
 	LastRun          metav1.Time `json:"LastRun"`          // the time the khWorkload was last run
 	AuthoritativePod string    `json:"AuthoritativePod"` // the main kuberhealthy pod creating and updating the khstate
 	CurrentUUID      string    `json:"uuid"`             // the UUID that is authorized to report statuses into the kuberhealthy endpoint
