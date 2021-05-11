@@ -1250,7 +1250,7 @@ func (ext *Checker) waitForShutdown(ctx context.Context) chan error {
 		}
 		if !exists {
 			ext.log("shutdown completed")
-			return nil
+			return doneChan
 		}
 
 		// see if the context has expired yet and give up if so

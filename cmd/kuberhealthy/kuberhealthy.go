@@ -1394,7 +1394,7 @@ func (k *Kuberhealthy) externalCheckReportHandler(w http.ResponseWriter, r *http
 	case khstatev1.KHCheck:
 		checkDetails := k.stateReflector.CurrentStatus().CheckDetails
 		checkRunDuration = checkDetails[podReport.Namespace+"/"+podReport.Name].RunDuration
-	case health.KHJob:
+	case khstatev1.KHJob:
 		jobDetails := k.stateReflector.CurrentStatus().JobDetails
 		checkRunDuration = jobDetails[podReport.Namespace+"/"+podReport.Name].RunDuration
 	}

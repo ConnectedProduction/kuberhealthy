@@ -4,18 +4,17 @@ require (
 	github.com/Pallinder/go-randomdata v1.1.0
 	github.com/aws/aws-sdk-go v1.25.24
 	github.com/blang/semver v3.5.1+incompatible // indirect
-	github.com/brancz/gojsontoyaml v0.0.0-20201216083616-202f76bf8c1f // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/codingsince1985/checksum v1.1.0
 	github.com/denverdino/aliyungo v0.0.0-20191023002520-dba750c0c223 // indirect
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-ini/ini v1.49.0 // indirect
-	github.com/go-yaml/yaml v2.1.0+incompatible // indirect
 	github.com/google/uuid v1.1.2
 	github.com/gophercloud/gophercloud v0.1.0 // indirect
 	github.com/gorhill/cronexpr v0.0.0-20180427100037-88b0669f7d75
 	github.com/influxdata/influxdb1-client v0.0.0-20190402204710-8ff2fc3824fc
 	github.com/integrii/flaggy v1.2.2
+	github.com/onsi/gomega v1.8.1 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/pkg/sftp v1.10.1 // indirect
 	github.com/sirupsen/logrus v1.4.2
@@ -26,8 +25,6 @@ require (
 	k8s.io/apimachinery v0.19.3
 	k8s.io/client-go v0.19.0
 	k8s.io/kops v1.11.0
-	sigs.k8s.io/controller-tools v0.4.1 // indirect
-	sigs.k8s.io/yaml v1.2.0
 )
 
 go 1.15
