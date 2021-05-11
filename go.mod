@@ -10,7 +10,9 @@ require (
 	github.com/denverdino/aliyungo v0.0.0-20191023002520-dba750c0c223 // indirect
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-ini/ini v1.49.0 // indirect
-	github.com/google/uuid v1.1.1
+	github.com/go-yaml/yaml v2.1.0+incompatible // indirect
+	github.com/google/uuid v1.1.2
+	github.com/gophercloud/gophercloud v0.1.0 // indirect
 	github.com/gorhill/cronexpr v0.0.0-20180427100037-88b0669f7d75
 	github.com/influxdata/influxdb1-client v0.0.0-20190402204710-8ff2fc3824fc
 	github.com/integrii/flaggy v1.2.2
