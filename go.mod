@@ -1,4 +1,4 @@
-module github.com/Comcast/kuberhealthy/v2
+module github.com/kuberhealthy/kuberhealthy/v2
 
 require (
 	github.com/Pallinder/go-randomdata v1.1.0

@@ -10,9 +10,9 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	khcheckv1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khcheck/v1"
-	khstatev1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khstate/v1"
-	"github.com/Comcast/kuberhealthy/v2/pkg/kubeClient"
+	khcheckv1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khcheck/v1"
+	khstatev1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khstate/v1"
+	"github.com/kuberhealthy/kuberhealthy/v2/pkg/kubeClient"
 
 	apiv1 "k8s.io/api/core/v1"
 )

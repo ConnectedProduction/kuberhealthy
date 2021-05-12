@@ -25,9 +25,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	typedv1 "k8s.io/client-go/kubernetes/typed/core/v1"
 
-	khcheckv1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khcheck/v1"
-	khjobv1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khjob/v1"
-	khstatev1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khstate/v1"
+	khcheckv1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khcheck/v1"
+	khjobv1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khjob/v1"
+	khstatev1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khstate/v1"
 	"github.com/Comcast/kuberhealthy/v2/pkg/checks/external/util"
 )
 

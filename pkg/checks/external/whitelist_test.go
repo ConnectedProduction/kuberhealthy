@@ -3,7 +3,7 @@ package external
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	khstatev1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khstate/v1"
+	khstatev1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khstate/v1"
 )
 
 // GetWhitelistedUUIDForExternalCheck fetches the current allowed UUID for an

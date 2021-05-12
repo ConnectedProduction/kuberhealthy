@@ -10,8 +10,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"k8s.io/client-go/kubernetes"
 
-	khcheckv1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khcheck/v1"
-	"github.com/Comcast/kuberhealthy/v2/pkg/checks/external"
+	khcheckv1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khcheck/v1"
+	"github.com/kuberhealthy/kuberhealthy/v2/pkg/checks/external"
 )
 
 // newExternalTestCheck creates a new external test checker struct with a basic set of defaults

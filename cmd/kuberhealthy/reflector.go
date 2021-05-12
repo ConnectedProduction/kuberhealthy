@@ -12,8 +12,8 @@ import (
 
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 
-	khstatev1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khstate/v1"
-	"github.com/Comcast/kuberhealthy/v2/pkg/health"
+	khstatev1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khstate/v1"
+	"github.com/kuberhealthy/kuberhealthy/v2/pkg/health"
 )
 
 // StateReflector watches the state of khstate objects and stores them in a local cache.  Then, when the current

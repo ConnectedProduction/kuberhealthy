@@ -15,8 +15,8 @@ import (
 
 	apiv1 "k8s.io/api/core/v1"
 
-	khcheckv1 "github.com/Comcast/kuberhealthy/v2/pkg/apis/khcheck/v1"
-	"github.com/Comcast/kuberhealthy/v2/pkg/kubeClient"
+	khcheckv1 "github.com/kuberhealthy/kuberhealthy/v2/pkg/apis/khcheck/v1"
+	"github.com/kuberhealthy/kuberhealthy/v2/pkg/kubeClient"
 )
 
 func init() {
