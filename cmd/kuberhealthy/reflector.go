@@ -115,23 +115,21 @@ func determineKHWorkload(name string, namespace string) khstatev1.KHWorkload {
 	var khWorkload khstatev1.KHWorkload
 	log.Debugln("determineKHWorkload: determining workload:", name)
 
-	checkPod, err := khCheckClient.KuberhealthyChecks(namespace).Get(name, v1.GetOptions{})
+	_, err := khCheckClient.KuberhealthyChecks(namespace).Get(name, v1.GetOptions{})
 	if err != nil {
 		if k8sErrors.IsNotFound(err) || strings.Contains(err.Error(), "not found") {
 			log.Debugln("determineKHWorkload: Not a khcheck.")
 		}
 	} else {
-		log.Debugln("determineKHWorkload: Found khcheck:", checkPod.Name)
 		return khstatev1.KHCheck
 	}
 
-	jobPod, err := khJobClient.KuberhealthyJobs(namespace).Get(name, v1.GetOptions{})
+	_, err = khJobClient.KuberhealthyJobs(namespace).Get(name, v1.GetOptions{})
 	if err != nil {
 		if k8sErrors.IsNotFound(err) || strings.Contains(err.Error(), "not found") {
 			log.Debugln("determineKHWorkload: Not a khjob.")
 		}
 	} else {
-		log.Debugln("determineKHWorkload: Found khjob:", jobPod.Name)
 		return khstatev1.KHJob
 	}
 	return khWorkload
