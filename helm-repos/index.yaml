@@ -402,7 +402,7 @@ entries:
     created: "2020-11-05T21:22:09.340110629Z"
     description: An operator for synthetic test and monitoring. Works great with Prometheus.
     digest: afc29fe9edcda5bf1b1940e817150b088430cbdf1aeea3bd02c9f0c0cf84cb62
-    home: https://kuberhealthy.github.io/kuberhealthy/
+    home: https://github.com/ConnectedProduction/kuberhealthy/
     icon: https://raw.githubusercontent.com/Comcast/kuberhealthy/master/images/logo-square.png
     keywords:
     - kuberhealthy
@@ -427,18 +427,18 @@ entries:
       name: joshulyne
     name: kuberhealthy
     sources:
-    - https://github.com/Comcast/kuberhealthy
+    - https://github.com/ConnectedProduiction/kuberhealthy
     - https://github.com/helm/charts/tree/master/stable/kuberhealthy
     type: application
     urls:
-    - https://kuberhealthy.github.io/kuberhealthy/helm-repos/archives/kuberhealthy-33.tgz
+    - https://github.com/ConnectedProduction/kuberhealthy/helm-repos/archives/kuberhealthy-33.tgz
     version: "33"
   - apiVersion: v2
     appVersion: v2.3.0
     created: "2020-10-27T19:55:04.548097435Z"
     description: An operator for synthetic test and monitoring. Works great with Prometheus.
     digest: cc224470d65115ac5ee4ec202e842901ba8d8c8d5e729fff395a83741beee4de
-    home: https://kuberhealthy.github.io/kuberhealthy/
+    home: https://github.com/ConnectedProduction/kuberhealthy/
     icon: https://raw.githubusercontent.com/Comcast/kuberhealthy/master/images/logo-square.png
     keywords:
     - kuberhealthy
@@ -463,11 +463,11 @@ entries:
       name: joshulyne
     name: kuberhealthy
     sources:
-    - https://github.com/Comcast/kuberhealthy
+    - https://github.com/ConnectedProduction/kuberhealthy
     - https://github.com/helm/charts/tree/master/stable/kuberhealthy
     type: application
     urls:
-    - https://kuberhealthy.github.io/kuberhealthy/helm-repos/archives/kuberhealthy-32.tgz
+    - https://github.com/ConnectedProduction/kuberhealthy/helm-repos/archives/kuberhealthy-32.tgz
     version: "32"
   - apiVersion: v2
     appVersion: v2.3.0
